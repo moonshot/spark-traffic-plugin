@@ -1,0 +1,8 @@
+<?jelly escape-by-default='true'?>
+<!--
+  This view is used to render the installed plugins page.
+-->
+<div>
+  This plugin sends the build status to a spark.io based traffic light.
+  See https://github.com/moonshot/spark-traffic-light for hardware details.
+</div>

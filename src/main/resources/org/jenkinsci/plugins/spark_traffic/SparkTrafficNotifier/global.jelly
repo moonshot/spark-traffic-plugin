@@ -1,0 +1,15 @@
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
+  <f:section title="Spark Traffic Light Notifier">
+    <f:entry title="Access Token"
+        description="Access token for your spark.io account"
+        field="accessToken">
+        <f:textbox
+            name="spark_traffic.accessToken"
+            value="${descriptor.getAccessToken()}"/>
+    </f:entry>
+    <f:validateButton
+       title="Test spark.io connection and token" progress="Testing..."
+       with="spark_traffic.accessToken"
+       method="testSparkConnection" />
+  </f:section>
+</j:jelly>
